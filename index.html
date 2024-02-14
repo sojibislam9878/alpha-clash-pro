@@ -30,18 +30,18 @@
     >
     <!-- * ============ HOME SECTION ==================== -->
 
-      <section id="home" class=" justify-center h-full hidden">
+      <section id="home" class=" justify-center h-full">
         <div class="pt-52 text-center">
           <h1 class="font-anton text-7xl md:text-8xl lg:text-9xl tracking-wider">Alphabet Clash</h1>
           <p class="text-2xl mt-16">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
-          <button class="btn mt-14 text-xl">Play Now</button>
+          <button id="playbtn" class="btn mt-14 text-xl">Play Now</button>
         </div>
       </section>
       <!-- * =========== play ground ============= -->
-      <section id="playGround">
-        <div class="w-4/5 mx-auto  ">
+      <section id="playGround" class="hidden">
+        <div class="w-4/5 mx-auto">
           <!-- ~ display  -->
           <div class="text-center pt-14">
             <div class="artboard artboard-horizontal border-8 rounded-lg border-[#010313cc] bg-[#FFFFFFa6]">
@@ -89,10 +89,11 @@
           <div class="flex justify-between mt-16">
             <button class="flex justify-center items-center rounded-full bg-[#894189] border-[#894189] text-white text-lg btn">life <span><img src="images/lifes.svg" alt=""></span><span>1</span></button>
 
-            <button class="flex justify-center items-center rounded-full bg-[#360472] border-[#360472] text-white text-lg btn">life <span><img src="images/dollar.svg" alt=""></span><span>1</span></button>
+            <button class="flex justify-center items-center rounded-full bg-[#360472] border-[#360472] text-white text-lg btn">point<span><img src="images/dollar.svg" alt=""></span><span>1</span></button>
           </div>
         </div>
       </section>
+      <!-- * score section -->
       <section id="score" class=" text-center pt-64 hidden">
         <div class="border border-gray-600 max-w-xl lg:w-2/6 md:w-2/6 w-4/5 mx-auto bg-[linear-gradient(130deg,rgba(255,255,255,0.5),rgba(0,0,0,0.5))] rounded-lg">
           <h1 class="md:text-5xl text-2xl font-bold md:mt-9 mt-5">Score:<span>14</span></h1>
@@ -102,5 +103,6 @@
         </div>
       </section>
     </main>
+    <script src="scripts/indes.js"></script>
   </body>
 </html>

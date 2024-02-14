@@ -40,7 +40,7 @@
           <p class="text-2xl mt-16">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
-          <button id="playbtn" class="btn mt-14 text-xl">Play Now</button>
+          <button onclick="play()" id="playbtn" class="btn mt-14 text-xl">Play Now</button>
         </div>
       </section>
       <!-- * =========== play ground ============= -->
@@ -108,28 +108,28 @@
               class="flex justify-center items-center rounded-full bg-[#894189] border-[#894189] text-white text-lg btn"
             >
               life <span><img src="images/lifes.svg" alt="" /></span
-              ><span>1</span>
+              ><span id="life">2</span>
             </button>
 
             <button
               class="flex justify-center items-center rounded-full bg-[#360472] border-[#360472] text-white text-lg btn"
             >
               point<span><img src="images/dollar.svg" alt="" /></span
-              ><span>1</span>
+              ><span id="point">0</span>
             </button>
           </div>
         </div>
       </section>
       <!-- * score section -->
-      <section id="score" class="text-center pt-64 hidden">
+      <section id="scoreSection" class="text-center pt-64 hidden">
         <div
           class="border border-gray-600 max-w-xl lg:w-2/6 md:w-2/6 w-4/5 mx-auto bg-[linear-gradient(130deg,rgba(255,255,255,0.5),rgba(0,0,0,0.5))] rounded-lg"
         >
           <h1 class="md:text-5xl text-2xl font-bold md:mt-9 mt-5">
-            Score:<span>14</span>
+            Score:<span id="finalScore"> 0</span>
           </h1>
-          <button class="btn md:text-xl mt-4">Play again</button>
-          <p class="md:text-xl md:font-semibold mt-4 mb-6">
+          <button onclick="play()" class="btn md:text-xl mt-4">Play again</button>
+          <p id="message" class="md:text-xl md:font-semibold mt-4 mb-6">
             Practice will make you Pro
           </p>
         </div>

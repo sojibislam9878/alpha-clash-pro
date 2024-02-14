@@ -1,19 +1,16 @@
 const playBtn = document.getElementById("playbtn");
-const home = document.getElementById("home")
-const playGround = document.getElementById("playGround");
-const display = document.getElementById("display")
-const letterString ="abcdefghijklmnopqrstuvwxyz"
-const letterArray = letterString.split("")
-const index = Math.floor(Math.random()*25)
-const letter = letterArray[index]
 
+function continueGame() {
+  letter = randomLetter();
+  console.log("your random letter", letter);
+  const display = document.getElementById("display");
+  display.innerText = letter;
 
-display.innerText = letter
+  setBgColor(letter);
+}
 
-playBtn.addEventListener("click",function(){
-    home.classList.add("hidden")
-    playGround.classList.remove("hidden")
-})
-
-
-
+playBtn.addEventListener("click", function play() {
+  hideElementById("home");
+  showElementById("playGround");
+  continueGame();
+});

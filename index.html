@@ -28,11 +28,15 @@
     <main
       class="bg-black bg-[linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url('images/background.png')] bg-no-repeat bg-center bg-auto text-white min-h-screen"
     >
-    <!-- * ============ HOME SECTION ==================== -->
+      <!-- * ============ HOME SECTION ==================== -->
 
-      <section id="home" class=" justify-center h-full">
+      <section id="home" class="justify-center h-full">
         <div class="pt-52 text-center">
-          <h1 class="font-anton text-7xl md:text-8xl lg:text-9xl tracking-wider">Alphabet Clash</h1>
+          <h1
+            class="font-anton text-7xl md:text-8xl lg:text-9xl tracking-wider"
+          >
+            Alphabet Clash
+          </h1>
           <p class="text-2xl mt-16">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
@@ -44,66 +48,94 @@
         <div class="w-4/5 mx-auto">
           <!-- ~ display  -->
           <div class="text-center pt-14">
-            <div class="artboard artboard-horizontal border-8 rounded-lg border-[#010313cc] bg-[#FFFFFFa6]">
-              <p class="md:text-lg md:font-semibold bg-[#010313cc] md:rounded-b-lg pb-3 px-1 md:w-1/2 mx-auto">Don't watch keyboard  while playing...</p>
-              <p id="display" class="text-8xl font-bold text-black uppercase pt-12 pb-16 lg:p-28">y</p>
+            <div
+              class="artboard artboard-horizontal border-8 rounded-lg border-[#010313cc] bg-[#FFFFFFa6]"
+            >
+              <p
+                class="md:text-lg md:font-semibold bg-[#010313cc] md:rounded-b-lg pb-3 px-1 md:w-1/2 mx-auto"
+              >
+                Don't watch keyboard while playing...
+              </p>
+              <p
+                id="display"
+                class="text-8xl font-bold text-black uppercase pt-12 pb-16 lg:p-28"
+              >
+                y
+              </p>
             </div>
           </div>
           <!-- ~ keyboard -->
-          <div class="text-black text-xs md:text-2xl mt-14 font-bold lg:text-3xl ">
+          <div
+            class="text-black text-xs md:text-2xl mt-14 font-bold lg:text-3xl"
+          >
             <div class="flex justify-center gap-2 my-2 w-full">
-              <kbd class="kbd">q</kbd>
-              <kbd class="kbd">w</kbd>
-              <kbd class="kbd">e</kbd>
-              <kbd class="kbd">r</kbd>
-              <kbd class="kbd">t</kbd>
-              <kbd class="kbd">y</kbd>
-              <kbd class="kbd">u</kbd>
-              <kbd class="kbd">i</kbd>
-              <kbd class="kbd">o</kbd>
-              <kbd class="kbd">p</kbd>
-            </div> 
+              <kbd id="q" class="kbd">q</kbd>
+              <kbd id="w" class="kbd">w</kbd>
+              <kbd id="e" class="kbd">e</kbd>
+              <kbd id="r" class="kbd">r</kbd>
+              <kbd id="t" class="kbd">t</kbd>
+              <kbd id="y" class="kbd">y</kbd>
+              <kbd id="u" class="kbd">u</kbd>
+              <kbd id="i" class="kbd">i</kbd>
+              <kbd id="o" class="kbd">o</kbd>
+              <kbd id="p" class="kbd">p</kbd>
+            </div>
             <div class="flex justify-center gap-2 my-2 w-full">
-              <kbd class="kbd">a</kbd>
-              <kbd class="kbd">s</kbd>
-              <kbd class="kbd">d</kbd>
-              <kbd class="kbd">f</kbd>
-              <kbd class="kbd">g</kbd>
-              <kbd class="kbd">h</kbd>
-              <kbd class="kbd">j</kbd>
-              <kbd class="kbd">k</kbd>
-              <kbd class="kbd">l</kbd>
-            </div> 
+              <kbd id="a" class="kbd">a</kbd>
+              <kbd id="s" class="kbd">s</kbd>
+              <kbd id="d" class="kbd">d</kbd>
+              <kbd id="f" class="kbd">f</kbd>
+              <kbd id="g" class="kbd">g</kbd>
+              <kbd id="h" class="kbd">h</kbd>
+              <kbd id="j" class="kbd">j</kbd>
+              <kbd id="k" class="kbd">k</kbd>
+              <kbd id="l" class="kbd">l</kbd>
+            </div>
             <div class="flex justify-center gap-2 my-y w-full">
-              <kbd class="kbd">z</kbd>
-              <kbd class="kbd">x</kbd>
-              <kbd class="kbd">c</kbd>
-              <kbd class="kbd">v</kbd>
-              <kbd class="kbd">b</kbd>
-              <kbd class="kbd">n</kbd>
-              <kbd class="kbd">m</kbd>
-              <kbd class="kbd">/</kbd>
+              <kbd id="z" class="kbd">z</kbd>
+              <kbd id="x" class="kbd">x</kbd>
+              <kbd id="c" class="kbd">c</kbd>
+              <kbd id="v" class="kbd">v</kbd>
+              <kbd id="b" class="kbd">b</kbd>
+              <kbd id="n" class="kbd">n</kbd>
+              <kbd id="m" class="kbd">m</kbd>
+              <kbd id="/" class="kbd">/</kbd>
             </div>
           </div>
           <!-- ~ life and point -->
           <div class="flex justify-between mt-16">
-            <button class="flex justify-center items-center rounded-full bg-[#894189] border-[#894189] text-white text-lg btn">life <span><img src="images/lifes.svg" alt=""></span><span>1</span></button>
+            <button
+              class="flex justify-center items-center rounded-full bg-[#894189] border-[#894189] text-white text-lg btn"
+            >
+              life <span><img src="images/lifes.svg" alt="" /></span
+              ><span>1</span>
+            </button>
 
-            <button class="flex justify-center items-center rounded-full bg-[#360472] border-[#360472] text-white text-lg btn">point<span><img src="images/dollar.svg" alt=""></span><span>1</span></button>
+            <button
+              class="flex justify-center items-center rounded-full bg-[#360472] border-[#360472] text-white text-lg btn"
+            >
+              point<span><img src="images/dollar.svg" alt="" /></span
+              ><span>1</span>
+            </button>
           </div>
         </div>
       </section>
       <!-- * score section -->
-      <section id="score" class=" text-center pt-64 hidden">
-        <div class="border border-gray-600 max-w-xl lg:w-2/6 md:w-2/6 w-4/5 mx-auto bg-[linear-gradient(130deg,rgba(255,255,255,0.5),rgba(0,0,0,0.5))] rounded-lg">
-          <h1 class="md:text-5xl text-2xl font-bold md:mt-9 mt-5">Score:<span>14</span></h1>
+      <section id="score" class="text-center pt-64 hidden">
+        <div
+          class="border border-gray-600 max-w-xl lg:w-2/6 md:w-2/6 w-4/5 mx-auto bg-[linear-gradient(130deg,rgba(255,255,255,0.5),rgba(0,0,0,0.5))] rounded-lg"
+        >
+          <h1 class="md:text-5xl text-2xl font-bold md:mt-9 mt-5">
+            Score:<span>14</span>
+          </h1>
           <button class="btn md:text-xl mt-4">Play again</button>
-          <p class="md:text-xl md:font-semibold mt-4 mb-6">Practice will make you Pro</p>
-
+          <p class="md:text-xl md:font-semibold mt-4 mb-6">
+            Practice will make you Pro
+          </p>
         </div>
       </section>
     </main>
     <script src="scripts/indes.js"></script>
-    <script src="scripts/letter.js"></script>
+    <script src="scripts/utility.js"></script>
   </body>
 </html>
